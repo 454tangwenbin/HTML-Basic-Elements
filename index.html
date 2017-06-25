@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="1122334455">
+    <title>HTML基本元素</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        div#container {
+            width:500px
+        }
+        div#header {
+            background-color:#99bbbb;
+        }
+        div#menu {
+            background-color:#ffff99; height:200px; width:100px; float:left;
+        }
+        div#content {
+            background-color:#EEEEEE; height:200px; width:400px; float:left;
+        }
+        div#footer {
+            background-color:#99bbbb; clear:both; text-align:center;
+        }
+    </style>
+    </head>
+    <body>
+        <h1 style="margin: auto; text-align: center; font-family: '黑体'; font-weight: normal;">HTML基本元素</h1>
+        <hr />
+        <b>超链接和锚：</b>
+        <a href="http://www.baidu.com" target="baidu">This is a link!</a>
+        <a href="#in">This is a link to mao!</a>
+        <hr />
+        <b>标题，列表和段落：</b>
+        <h1>This is a heading</h1>
+        <h2>This is a heading</h2>
+        <h3>This is a heading</h3>
+        <p>
+        This is a paragraph:
+        <ul>
+            <li>1111111</li>
+            <li>2222222</li>
+            <li>3333333</li>
+        </ul>
+        </p><br />
+        <p>This is another paragraph</p><br />
+        <hr />
+        <b>文档：</b>
+        <header>
+            <hgroup>
+            <h1>大标题</h1>
+            <h4>小标题</h4>
+            </hgroup>
+            
+        这里包括LOGO 标题 导航等
+        </header>
+        <section>
+            这里是文档主题部分
+        </section>
+        <footer>
+        这里存放版权声明，友情链接
+        </footer>
+        <hr />
+        <b>图片：</b>
+        <a href="mailto:454tangwenbin@163.com" target="_blank"
+            title="fengjingtu"><img src="1.jpg" alt="fengjingtu"></a>
+        <hr />
+        <b>视频和音频：</b>
+        <video src="123.mp3" preload="preload" controls="controls">
+        </video>
+        <audio src="123.mp3" loop="loop" title="kecengjideai" preload="preload" controls="controls">
+        </audio>
+        <hr />
+        <b>进度条：</b>
+        <progress value="30" max="100"></progress>
+        <hr />
+        <b>表单：</b>
+        <form name="input" action="MAILTO:454tangwenbin@163.com" method="post">
+            <select name="cars">
+                <option> bike </option>
+                <option> car </option>
+                <option> jipu </option>
+                <option selected="selected"> bus </option>
+            </select>
+            <textarea rows="10" cols="30"></textarea>
+            <fieldset>
+                <legend>user info.</legend>
+                user: <input type="text" name="firstname" />
+                passward: <input type="passward" name="firstname" />
+            </fieldset>
+            <input type="radio" name="sex" value="male" /> Male <br />
+            <input type="radio" name="sex" value="female" /> Famale <br />
+            <input type="checkbox" name="car" /> I have a car <br />
+            <input type="checkbox" name="bike" /> I have a bike <br />
+            <input type="submit" name="submit" value="submit" /> <br />
+            <input type="number" name="user_number" min="0" max="10" step="2" value="6" /><br />
+        </form>
+        <hr />
+        <b>超链接和锚：</b>
+        <a name="in"><i>mao</i></a>
+        <hr />
+        <b>内联框架：</b>
+        <iframe src="" width="800" height="200" name="baidu" frameborder="0"></iframe>
+        <hr />
+        <b>表格：</b>
+        <table border="1" style="width:300px;">
+            <colgroup>
+                <col style="background:red;">
+            </colgroup>
+            
+            <thead>
+            <tr>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>婚否</td>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td colspan="3">kkkkkk</td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+                <td>张三</td>
+                <td>男</td>
+                <td>已婚</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>女</td>
+                <td>已婚</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr />
+        <b>布局：</b>
+        <div id="container">
+            <div id="header">Main tiltle</div>
+            <div id="menu">
+                Menu
+                <ul> 
+                    <li>HTLM</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul> 
+            </div>
+            <div id="content">content</div>
+            <div id="footer">foot</div>
+        </div>
+        <hr />
+    </body>
+</html>
