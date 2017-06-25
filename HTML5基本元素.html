@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5基本元素</title>
+<style>
+/**{border:1px solid red; height:20px}*/
+/*header*/
+header {height:120px; background:#ABCDEF}
+nav {height:30px; background:#00FF00;margin-top:70px;}
+nav ul li{height:30px; width:100px;float:left;line-height:30px}
+/*div*/
+div {margin-top:10px; height:800px}
+section {height:800px; background:#ABCDEF; width:70%; float:left}
+article {background:#00FF00; width:500px; margin:0 auto}
+aside {height:800px; background:#ABCDEF; width:28%; float:right}
+footer {height:100px; background:#ABCDEF; clear:both; margin-top:10px}
+</style>
+</head>
+<body>
+<header>
+    <p>This is a header tag!</p>
+    <nav>
+        <ul>
+            <li>首页</li>
+            <li>论坛</li>
+            <li>帮助</li>
+            <li>社区</li>
+        </ul>
+    </nav>
+</header>
+    <div>
+        <section>
+            <p>This is a section tag!</p>
+            <article>
+                <h2>HTML</h2>
+                <p>HTML</p>
+            </article>
+            <hr />
+            <article>
+                <h1>CSS</h1>
+                <p>CSS</p>
+            </article>
+            <hr />
+            <article>
+                <h1>JS</h1>
+                <p>JS</p>
+            </article>
+            <hr />
+            <figure>
+                <figcaption>UFO</figcaption>
+                <p>unknown flying object</p>
+            </figure>
+            <hr />
+            <figure>
+                <dt>UFO</dt>
+                <dd>unknown flying object</dd>
+            </figure>
+            <hr />
+            <dialog>
+                <dt>UFO</dt>
+                <dd>unknown flying object</dd>
+            </dialog>
+            <hr />
+            <menu>
+                <li>单击</li>
+                <li>右键单击</li>
+            </menu>
+            <hr />
+            <span contextmenu="candan">右键单击试试</span>
+            <menu type="context" id="candan">
+                <menuitem lable="menu1" onclick="alert('This is menu1')" icon="https://www.baidu.com/img/baidu_jgylogo3.gif"/>
+                </menuitem>
+            </menu>
+            <hr />
+            <meter min="0" max="10" value="8" low="3" high="7"></meter>
+            <progress max="100" value="8" id="pro"></progress>
+            <script>
+                var pro = document.getElementById('pro');
+                setInterval(function()
+                        {
+                            pro.value += 1;
+                        }, 100);
+            </script>
+            <hr />
+            <details>
+                <dt>This is a problem?</dt>
+                <dd>to be or not to be.</dd>
+            </details>
+            <hr />
+            <ruby>夼<rp>(</rp><rt>kuang</rt><rp>)</rp></ruby>
+            <hr />
+            123<mark>456</mark>789
+            <hr />
+        </section>
+        <aside>
+            <p>This is a aside tag!</p>
+            <hgroup>
+                <h3>123</h3>
+                <h3>456</h3>
+                <h3>789</h3>
+            </hgroup>
+            <hr />
+            <video src="123.mp4" controls="controls" loop="loop">Your IE is old!</video>
+        </aside>
+    </div>
+    <footer>
+    <p>This is a footer tag!</p>
+    <hr />
+    <small>www.html.com.cn</small>
+    </footer>
+<hr />
+</body>
+</html>
